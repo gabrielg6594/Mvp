@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JSON
+        </title>
+    </head>
+</html>
+<body>
+    <script type="text/javascript">
+    
+        let calander= 
+            [
+                {
+                	"month": "january",
+                	"year": 2022,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 1,
+                           "timeend" : 2,
+                           "date" : 14
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 4,
+                           "timeend" : 5,
+                           "date" : 17
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 3,
+                           "timeend" : 4,
+                           "date" : 10
+                           }
+    
+                    	]
+                },
+            {
+                	"month": "febuary",
+                	"year": 2022,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                           "timeend" : 5,
+                           "date" : 4
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 7,
+                           "timeend" : 8,
+                           "date" : 7
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 2,
+                           "timeend" : 5,
+                           "date" : 6
+                           }    
+
+                    	]
+                }
+            ];
+        console.log(calander);
+    
+    const calJson= `
+        {
+                	"month": "january",
+                	"year": 2022,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 1,
+                           "timeend" : 2,
+                           "date" : 14
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 4,
+                           "timeend" : 5,
+                           "date" : 17
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 3,
+                           "timeend" : 4,
+                           "date" : 10
+                           }
+    
+                    	]
+                },
+            {
+                	"month": "febuary",
+                	"year": 2022,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                           "timeend" : 5,
+                           "date" : 4
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 7,
+                           "timeend" : 8,
+                           "date" : 7
+                           },
+                           {
+                           "name" : "webex",
+                           "timestart" : 2,
+                           "timeend" : 5,
+                           "date" : 6
+                           }  
+                        ]
+                    }
+    `;
+    const cal = JSON.parse(calJson);
+    console.log(cal);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
