@@ -8,116 +8,605 @@
 </html>
 <body>
     <script type="text/javascript">
-    
-        let calander= // for this I tryed to have it display the list but it didn't display and only made it worst
-            [
-                {
-                	"month": "january",
-                	"year": 2022,
-                	"events": [
-                          {
-                          "name" : "webex",
-                          "timestart" : 1,
-                           "timeend" : 2,
-                           "date" : 14
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 4,
-                           "timeend" : 5,
-                           "date" : 17
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 3,
-                           "timeend" : 4,
-                           "date" : 10
-                           }
-    
-                    	]
-                },
-            {
-                	"month": "febuary",
-                	"year": 2022,
-                	"events": [
-                          {
-                          "name" : "webex",
-                          "timestart" : 3,
-                           "timeend" : 5,
-                           "date" : 4
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 7,
-                           "timeend" : 8,
-                           "date" : 7
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 2,
-                           "timeend" : 5,
-                           "date" : 6
-                           }    
 
-                    	]
-                }
-            ];
-        console.log(calander);
-    
     // for this version I restarted the code that was showing the list but used the same information and it worked.
-    const calJson= `  
-        {
-                	"month": "january",
-                	"year": 2022,
-                	"events": [
+    const calJson=
+        [
+            {
+                	"Month": "January",
+                	"Year": "2022",
+                	"Events": [
                           {
                           "name" : "webex",
-                          "timestart" : 1,
-                           "timeend" : 2,
-                           "date" : 14
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 4,
-                           "timeend" : 5,
-                           "date" : 17
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 3,
-                           "timeend" : 4,
-                           "date" : 10
-                           }
-    
-                    	]
+                          "timestart" : "1",
+                          "timeend" : "2",
+                          "date" : "14"
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : "3",
+                          "timeend" : "4",
+                          "date" : "10"
+                          }
+                        ]
                 },
-            {
-                	"month": "febuary",
+                {
+                	"Month": "Febuary",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "March",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "April",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "May",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          }
+                    ]
+                },
+                {
+                	"Month": "June",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"month": "July",
                 	"year": 2022,
                 	"events": [
                           {
                           "name" : "webex",
                           "timestart" : 3,
-                           "timeend" : 5,
-                           "date" : 4
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 7,
-                           "timeend" : 8,
-                           "date" : 7
-                           },
-                           {
-                           "name" : "webex",
-                           "timestart" : 2,
-                           "timeend" : 5,
-                           "date" : 6
-                           }  
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"month": "August",
+                	"year": 2022,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "September",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "October",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "November",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "December",
+                	"Year": 2022,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },{
+                	"Month": "January",
+                	"Year": "2023",
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : "1",
+                          "timeend" : "2",
+                          "date" : "14"
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : "4",
+                          "timeend" : "5",
+                          "date" : "17"
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : "3",
+                          "timeend" : "4",
+                          "date" : "10"
+                          }
                         ]
-                    }
-    `;
-    const cal = JSON.parse(calJson);
-    console.log(cal);
+                },
+                {
+                	"Month": "Febuary",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          }
+                    ]
+                },
+                {
+                	"Month": "March",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "April",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "May",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          }
+                    ]
+                },
+                {
+                	"Month": "June",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"month": "July",
+                	"year": 2023,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"month": "August",
+                	"year": 2023,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "September",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "October",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "November",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "December",
+                	"Year": 2023,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },{
+                	"Month": "January",
+                	"Year": "2024",
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : "1",
+                          "timeend" : "2",
+                          "date" : "14"
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : "4",
+                          "timeend" : "5",
+                          "date" : "17"
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : "3",
+                          "timeend" : "4",
+                          "date" : "10"
+                          }
+                        ]
+                },
+                {
+                	"Month": "Febuary",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "March",
+                	"Year": 2024,
+                	"Events": [
+                	    {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "April",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 7,
+                          "timeend" : 8,
+                          "date" : 7
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "May",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          },
+                          {
+                          "name" : "webex",
+                          "timestart" : 2,
+                          "timeend" : 5,
+                          "date" : 6
+                          }
+                    ]
+                },
+                {
+                	"Month": "June",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"month": "July",
+                	"year": 2024,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"month": "August",
+                	"year": 2024,
+                	"events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "September",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "October",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "November",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                },
+                {
+                	"Month": "December",
+                	"Year": 2024,
+                	"Events": [
+                          {
+                          "name" : "webex",
+                          "timestart" : 3,
+                          "timeend" : 5,
+                          "date" : 4
+                          }
+                    ]
+                }
+            ]
+        ;
+
+var keys = [];
+
+document.write("<table border==\"1\"><tr>");
+for (key in calJson[0]) {
+	document.write('<td>' + key + '</td>');
+}
+document.write("</tr>");
+for (var i = 0; i < calJson.length; i++) {
+	document.write('<tr>');
+	for (key in calJson[i]) {
+  	document.write('<td>' + calJson[i][key] + '</td>');
+  }
+	document.write('</tr>');
+}
+document.write("</table>");
+
+
+    
     </script>
 </body>
 </html>
@@ -128,3 +617,68 @@
 
 
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script type='text/javascript'>
+
+
+
+
+
+    //   $(document).ready(function() {
+
+    // var date = new Date();
+    // var d = date.getDate();
+    // var m = date.getMonth();
+    // var y = date.getFullYear();
+
+    // // $('#calendar').fullCalendar({
+    //     editable: false,
+    //     header: {
+    //         left: 'prev,next today myCustomButton',
+    //         center: 'title',
+    //         right: 'resourceDay,month,agendaWeek,agendaDay'
+    //     },
+
+    //     defaultView: 'month',
+    //     resources: {url: 'json/resources.json'}, //<--- resource.json file path
+    //     events: {url: 'json/events.json'}  //<--- events.json file path
+    // });
+
+// });
+
+
+// var keys = [];
+
+//     document.write("<table border==\"1\"><tr>");
+//     for (key in calJson[0]) {
+//     	document.write('<td>' + key + '</td>');
+//     }
+//     document.write("</tr>");
+//     for (var i = 0; i < calJson.length; i++) { // for each month
+//     	document.write('<tr>');
+//     	for (key in calJson[i]) { // current key (month, year, events)
+//     	   // console.log(key)
+//     	    if(key == "Events"){
+//     	        console.log("the key is events");
+//     	   //     // calJson[i][key] represents the array of objects (collection of events)
+//     	        calJson[i][key].forEach(function(event){
+//     	            console.log(event);
+//     	        });
+                
+//                 // "Events".forEach(var e = 0; e < events.length;e++){
+//                 //     document.write('<td>' + events[e] + '</td>')
+//                 // }
+// // use this website: https://flexiple.com/loop-through-object-javascript/
+
+
+
+//     	   //    // for(var e = 0; e < events.length;e++){
+//     	   //    //     document.write('<td>' + events[e] + '</td>');
+//     	        }
+//     	   // } else { // month or year
+//     	   //     document.write('<td>' + calJson[i][key] + '</td>');
+//     	   // }
+
+//         }
+//     	document.write('</tr>');
+//     }
